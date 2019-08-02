@@ -1,0 +1,62 @@
+<link rel="stylesheet" type="text/css" href="Survey-Form.css">
+<link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
+<body class="body">
+    <div>
+        <h1 id="title">Survey Form</h1>
+    </div>
+    <div>
+        <p id="description">A Survey to get to know you a little Better</p>
+    </div>
+    <div>
+        <form id="survey-form">
+            <div class="part-one">
+                <div>
+                    <label for="name" id="name-label"> Name:</label>
+                        <input id="name" type="text" placeholder="Enter your name"></input>
+                </div>
+                <div>
+                    <label for="email" id="email-label">E-mail:</label>
+                        <input id="email" type="text" placeholder="Enter your email"></input>
+                </div>
+                <div>
+                    <label for="age" id="number-label">Age:</label>
+                        <input id="number" type="text" placeholder="Age" min="1" max="99"></input>
+                </div>
+            </div>    
+            <div>
+                <label for="currentPos">Which best describes your current role?</label>
+                <select id="dropdown" name="currentPos" class="dropdown">
+                    <option disable value>Select an Option</option>
+                    <option value="Student">Student</option>
+                    <option value="Full-Time">Full-Time</option>
+                    <option value="Part-Time">Part-Time</option>
+                    <option value="Figuring-Life-Out">Figuring Life Out</option>
+                    <option value="Prefer-not-to-say">Prefer not to say</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <div>
+                <div>
+                    <label>Which code are you proficient with?<br>(Check All that Apply):</label>
+                </div>
+                <ul class="checkbox" style="list-style: none">
+                    <li><input type="checkbox" name="code1" value="JavaScript">JavaScript</input></li>
+                    <li><input type="checkbox" name="code2" value="Python">Python</input></li>
+                    <li><input type="checkbox" name="code3" value="Java">Java</input></li>
+                    <li><input type="checkbox" name="code4" value="PHP">PHP</input></li>
+                    <li><input type="checkbox" name="code5" value="SQL">SQL</input></li>
+                </ul>
+            </div>
+            <div>
+                <label for="comments">Any comments about the survey?</label>
+            </div>
+            <div>
+                <textarea id="comments" placeholder="Enter comments here.."></textarea>
+            </div>
+            <div>
+                <button id="submit" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
